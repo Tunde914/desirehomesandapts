@@ -74,6 +74,21 @@
         button:hover {
             background: goldenrod;
         }
+
+        @media (max-width: 768px) {
+            .form-container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    } 
+            
     </style>
 </head>
 <body>
@@ -116,7 +131,11 @@
             <input type="text" name="name" placeholder="Last Name" required>
             <input type="email" name="email" placeholder="Email Address" required>
             <input type="text" name="phone" placeholder="Phone Number" required>
-            <input type="datetime-local" name="check-out" required>
+            <label for="check-in">Booking Date</label>
+            <input type="date" id="check-in" name="check-in" required>
+            <label for="check-out">Departure Date</label>
+            <input type="date" id="check-out" name="check-out" required>
+
             <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
             <button type="submit">Book Now</button>
         </form>
