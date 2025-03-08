@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desire Home Apt's</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+	<link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico">
+	<link rel="apple-touch-icon" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+    <style>
+        body {
+            font-family: "Playfair Display", serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .image-description {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin: 50px auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        form input, textarea, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #FFD700;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Luxury Home Apartments</h1>
+        <p>Explore our beautifully designed spaces, perfect for your stay.</p>
+    </div>
+
+    <div class="gallery">
+        <div>
+            <img src="assets/images/image3.jpg" alt="Spacious Living Room">
+            <p class="image-description">Spacious Living Room</p>
+        </div>
+        <div>
+            <img src="assets/images/image10.jpg" alt="Cozy Bedroom">
+            <p class="image-description">Cozy Bedroom</p>
+        </div>
+        <div>
+            <img src="assets/images/kitchen.jpg" alt="Modern Kitchen">
+            <p class="image-description">Modern Kitchen</p>
+        </div>
+        <div>
+            <img src="assets/images/image1.jpg" alt="Luxury Bathroom">
+            <p class="image-description">Luxury Bathroom</p>
+        </div>
+        <div>
+            <img src="assets/images/image5.jpg" alt="Relaxation Area">
+            <p class="image-description">Relaxation Area</p>
+        </div>
+        <div>
+            <img src="assets/images/image6.jpg" alt="Entertainment with Snooker Board">
+            <p class="image-description">Entertainment with Snooker Board</p>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h2>Book Your Stay Now!!!</h2>
+        <form action="https://formsubmit.co/desireluxuryhomes@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="First Name" required>
+            <input type="text" name="name" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <input type="datetime-local" name="check-out" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>
