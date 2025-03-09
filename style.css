@@ -3,7 +3,6 @@
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    font-family: "Playfair Display", serif;
     list-style: none;
 }
 
@@ -19,6 +18,17 @@
     align-items: center;
     flex-wrap: inherit;
     z-index: 1000;
+}
+nav{
+    font-family: "Playfair Display", serif;
+}
+
+main{
+    font-family: "Playfair Display", serif;
+}
+
+.features p{
+    font-family: "Poppins", sans-serif;
 }
 
 .nav-logo{
@@ -164,6 +174,7 @@ main {
 }
 
 #about{
+    font-family: "Playfair Display", serif;
     margin-top: 10px;
     background-color: white;
 }
@@ -186,9 +197,9 @@ hr{
 }
 
 .aboutp{
+    font-family: "Poppins", sans-serif;
     margin-top: 2rem;
     line-height: 1.45em;
-    font-weight: 600;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -221,11 +232,16 @@ hr{
     display: block;
 }
 
+.image-text{
+    font-family: "Poppins", sans-serif;
+}
+
 .about h1{
     margin: 15px 0;
 }
 
 #gallery{
+    font-family: "Playfair Display", serif;
     margin: 3rem 2rem;
     justify-content: center;
     align-items: center;
@@ -392,15 +408,47 @@ span{
 }
 
 #review{
+    font-family: "Playfair Display", serif;
     justify-content: center;
     align-items: center;
 }
 
-.review{
+.reviews {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 20px;       
     justify-content: center;
-    align-items: center;
-    padding: 0 10px;
+    align-items: flex-start; 
 }
+
+.review {
+    font-family: "Poppins", sans-serif;
+    flex: 1; 
+    min-width: 300px; 
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.star {
+    font-size: 20px;
+    color: gold;
+}
+
+.review-text {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.author {
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
 
 .review-intro h1{
     text-align: center;
@@ -414,6 +462,7 @@ span{
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
+    padding-bottom: 2rem;
 }
 
 .star {
@@ -476,6 +525,7 @@ button:hover {
 }
 
 .footer {
+    font-family: "Poppins", sans-serif;
     background-color: #222;
     color: white;
     margin-top: 5rem;
