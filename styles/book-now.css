@@ -1,0 +1,89 @@
+body {
+  font-family: "Marcellus", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 50px 0;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 50px 20px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+.image-description {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.form-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 50px auto;
+}
+
+label {
+  color: black;
+  display: block;
+  font-weight: 500;
+  margin-top: 10px;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  gap: 10px;
+}
+.row div {
+  flex: 1;
+}
+
+button {
+  background: #FFD700;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Marcellus", serif;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: goldenrod;
+}
+
+@media (max-width: 450px) {
+  .form-container {
+      width: 80%;
+      padding: 20px;
+  }
+}
