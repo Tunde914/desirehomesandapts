@@ -1,5 +1,6 @@
 @media (max-width: 768px) {
     .nav-header{
+        position: fixed;
         background: white;
         color: black;
         justify-content: space-between;
